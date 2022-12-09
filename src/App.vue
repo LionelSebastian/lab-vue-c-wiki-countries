@@ -1,7 +1,10 @@
 <template>
   <div class="">
     <NavBar/>
-    <CountriesList/>   
+    <header class ="text-center" >
+    
+    </header>
+    <RouterView />
   </div>
 </template>
 
@@ -16,7 +19,9 @@ export default{
       CountriesList,    
       },
     data(){
-      countries:COUNTRIES;
+      return {
+        countries:COUNTRIES
+      };
     },
 };
 </script>
